@@ -1,0 +1,3 @@
+2
+INSERT INTO item VALUES (10),('Banana'),(20),('haha');
+SELECT i_name FROM item;

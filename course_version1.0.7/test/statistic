@@ -1,0 +1,11 @@
+5
+SELECT student_id, student_course_id, student_name FROM student_inf, student_course WHERE student_id = student_course_id;
+1
+SELECT student_name, student_course_score FROM student_inf, student_course WHERE student_id = student_course_id AND student_course_score<60;
+1
+SELECT teacher_name, student_course_name FROM student_inf, student_course WHERE student_id = student_course_id AND student_course_name = 'Physics';  
+1
+SELECT student_id, student_course_name, teacher_name FROM student_inf, student_course, course_teacher WHERE student_id = student_course_id AND course_name = student_course_name;  
+1
+SELECT student_name, student_course_name, student_course_score, teacher_name, FROM student_inf, student_course, course_teacher WHERE student_id = student_course_id AND course_name = student_course_name AND student_course_score = 100;  
+1
